@@ -9,26 +9,6 @@ package com.bridgelabz;
         head = node;
     }
 
-     public void pop() {
-         if (head == null)
-             System.out.println("\n" + "Stack is Empty!");
-         else {
-             Node<T> temp = head;
-             System.out.printf("Deleted element: %d", head.data);
-             System.out.println();
-             head = temp.next;
-         }
-     }
-     public T peak() {
-         if(head != null)
-             return head.data;
-         else {
-             System.out.println("Stack is Empty");
-         }
-
-         return null;
-     }
-
      public void show(){
         Node<T> node = head;
         if (head == null){
